@@ -1,0 +1,137 @@
+html body {
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+html body h1 {
+  display: block;
+  width: 600px;
+  margin: 20px auto;
+}
+html body .container {
+  display: block;
+  width: 600px;
+  margin: 100px auto 0;
+}
+html body div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+html body div ul {
+  margin: 0px;
+  padding: 0;
+}
+html body div ul li {
+  display: flex;
+}
+html body div ul li input[type=text] {
+  display: none;
+}
+html body div ul li.editMode input[type=text] {
+  display: block;
+}
+html body div ul li.editMode label {
+  display: none;
+}
+html body li {
+  clear: both;
+  list-style: none;
+  overflow: hidden;
+  padding: 20px 0px;
+  border-bottom: 1px solid #eee;
+}
+html body li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+html body li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+html body li > input[type="text"] {
+  width: 226px;
+}
+html body li > .delete:hover {
+  color: #cf2323;
+}
+html body h3 {
+  clear: both;
+  list-style: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+html body input {
+  outline: none;
+}
+html body button {
+  outline: none;
+  background: #000;
+  border: 0px;
+  color: #fff;
+  font-size: 15px;
+  width: 60px;
+  margin-left: 10px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  padding: 10px;
+}
+html body button:hover {
+  color: #333;
+}
+html body label[for='new-task'] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 20px;
+}
+html body input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+html body input[type="text"]:focus {
+  color: #333;
+}
+html body input#new-task {
+  width: 318px;
+}
+html body form > button:hover {
+  color: #0fc57c;
+}
+html body #completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+html body :focus-visible {
+  outline: none;
+  box-shadow: 0 0 2px 2px #51a7e8;
+  color: lime;
+}
+@media only screen and (max-width: 375px) {
+  html body .container {
+    display: block;
+    width: 100%;
+    margin: 100px auto 0;
+ }
+}
